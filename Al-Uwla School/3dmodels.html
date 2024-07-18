@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="view website" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>3D Models - Al-Uwla school</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+            width: 100%;
+            max-width: 1280px;
+            box-sizing: border-box;
+        }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .fullscreen-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .fullscreen-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            display: none;
+        }
+        .fullscreen-overlay iframe {
+            width: 80%;
+            height: 80%;
+        }
+        .fullscreen-overlay .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        footer {
+            width: 100%;
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html#page-top">Erbil Al-Uwla School</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#3dmodels">3D Models</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 3D Models Section -->
+    <section class="page-section" id="portfolio">
+        <div class="container-fluid p-0">
+            <h2 class="text-center mt-0">3D Models</h2>
+            <hr class="divider" />
+            <div class="gallery">
+                <div class="iframe-container">
+                    <iframe src="https://poly.cam/capture/D03B7D33-B721-4DC4-8120-D924DBE29A0D/embed" title="polycam capture viewer 1"></iframe>
+                    <button class="fullscreen-btn" onclick="openFullscreen('https://poly.cam/capture/D03B7D33-B721-4DC4-8120-D924DBE29A0D/embed')">Fullscreen</button>
+                </div>
+                <div class="iframe-container">
+                    <iframe src="https://poly.cam/capture/4A9417C8-908C-45A4-ACBE-1FEE0450260F/embed" title="Polycam Capture 2"></iframe>
+                    <button class="fullscreen-btn" onclick="openFullscreen('https://poly.cam/capture/4A9417C8-908C-45A4-ACBE-1FEE0450260F/embed')">Fullscreen</button>
+                </div>
+                <div class="iframe-container">
+                    <iframe src="https://poly.cam/capture/0630478C-B58A-4A3E-B271-8F232140BEF6/embed" title="Polycam Capture 3"></iframe>
+                    <button class="fullscreen-btn" onclick="openFullscreen('https://poly.cam/capture/0630478C-B58A-4A3E-B271-8F232140BEF6/embed')">Fullscreen</button>
+                </div>
+                <div class="iframe-container">
+                    <iframe src="https://poly.cam/capture/E37534E2-3FDE-4961-92B8-BE981547141A/embed" title="Polycam Capture 4"></iframe>
+                    <button class="fullscreen-btn" onclick="openFullscreen('https://poly.cam/capture/E37534E2-3FDE-4961-92B8-BE981547141A/embed')">Fullscreen</button>
+                </div>
+                <div class="iframe-container">
+                    <iframe src="https://poly.cam/capture/953483D1-71E2-493D-A93C-166D40E9CD41/embed" title="Polycam Capture 5"></iframe>
+                    <button class="fullscreen-btn" onclick="openFullscreen('https://poly.cam/capture/953483D1-71E2-493D-A93C-166D40E9CD41/embed')">Fullscreen</button>
+                </div>
+                <div class="iframe-container">
+                    <iframe src="https://poly.cam/capture/063B2678-BDC5-494D-8D6E-C0D464A41D3B/embed" title="Polycam Capture 6"></iframe>
+                    <button class="fullscreen-btn" onclick="openFullscreen('https://poly.cam/capture/063B2678-BDC5-494D-8D6E-C0D464A41D3B/embed')">Fullscreen</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fullscreen Overlay -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <button class="close-btn" onclick="closeFullscreen()">Close</button>
+        <iframe id="fullscreenIframe" src="" title="Fullscreen Viewer"></iframe>
+    </div>
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Copyright &copy; 2024 - TIU students</div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script>
+        function openFullscreen(url) {
+            document.getElementById('fullscreenIframe').src = url;
+            document.getElementById('fullscreenOverlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        }
+
+        function closeFullscreen() {
+            document.getElementById('fullscreenOverlay').style.display = 'none';
+            document.getElementById('fullscreenIframe').src = '';
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        }
+    </script>
+</body>
+</html>
